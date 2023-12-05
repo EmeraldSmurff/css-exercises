@@ -1,0 +1,18 @@
+.class-base,
+.class-2 {
+    background-color: #ef8484;
+    font-family: Verdana, DejaVu-Sans, Tahoma, sans-serif;
+}
+.class-2 {
+    font-size: 24px;
+}
+
+#one-id {
+    color: #0000ff;
+    font-size: 32px;
+}
+#another-id {
+    background-color: #66ff33;
+    font-size: 24px;
+    font-weight: bold;
+}

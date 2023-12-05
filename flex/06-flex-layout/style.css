@@ -5,6 +5,10 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  /* allows for the header and footers to be spaced out and to have flex but keep things from blocking each other */
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +20,10 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 input {
@@ -24,4 +32,61 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+/* Gets rid of the bullet points */
+ul {
+  list-style-type: none;
+}
+/* Gets rid of the underline with the text-decoration */
+a:link {
+  text-decoration: none; 
+  color: rgb(107, 107, 107);
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(107, 107, 107);
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(107, 107, 107);
+}
+
+a:active {
+  text-decoration: none;
+  color: rgb(107, 107, 107);
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+ul.left-links {
+    display: flex;
+    padding-left: 15px;
+    gap: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(229, 229, 229);
+}
+
+ul.right-links {
+    display: flex;
+    padding-right: 15px;
+    gap: 20px;
 }
